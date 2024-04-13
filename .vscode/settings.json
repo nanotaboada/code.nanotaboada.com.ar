@@ -1,0 +1,13 @@
+{
+    "editor.rulers": [
+        {
+            "column": 127
+        }
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 127,
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>code.nanotaboada.com.ar</title>
-        <link rel="stylesheet"
+        <link
+            rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
-            integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+        />
         <style>
             body {
-                background-color: white;
+                font-family: "Fira Code", monospace;
+                font-size: 16px;
+                line-height: 1.5;
                 background: url("background.jpg") no-repeat center center fixed;
+                background-color: white;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 background-size: cover;
@@ -25,35 +39,119 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main Navigation">
+        <nav
+            class="navbar navbar-expand-md navbar-light bg-light shadow-sm"
+            aria-label="Main Navigation"
+        >
             <div class="container-fluid">
                 <!-- Navigation > Brand -->
                 <span class="navbar-brand" href="#">
-                    <span class="bg-dark text-white p-1">code.</span><span class="p-1">nanotaboada.com.ar</span>
+                    <span class="bg-dark text-white p-1">code.</span
+                    ><span class="p-1">nanotaboada.com.ar</span>
                 </span>
                 <!-- Navigation > Toggler -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburger-button"
-                    aria-controls="hamburger-button" aria-expanded="false" aria-label="Hamburger button">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hamburger-button"
+                    aria-controls="hamburger-button"
+                    aria-expanded="false"
+                    aria-label="Hamburger button"
+                >
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="hamburger-button">
                     <!-- me-auto (left aligned), ms-auto (right aligned) -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item" id="projects">
-                            <a class="nav-link" aria-current="Projects" href="https://github.com/nanotaboada">Projects</a>
-                        </li>
                         <li class="nav-item" id="about">
-                            <a class="nav-link" aria-current="About" href="http://nanotaboada.com.ar/">About</a>
+                            <a
+                                class="nav-link"
+                                href="http://nanotaboada.com.ar/"
+                                target="_blank"
+                                >About</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown" id="projects">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="projectsDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >Projects</a
+                            >
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="projectsDropdown"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://github.com/nanotaboada"
+                                        target="_blank"
+                                        >GitHub</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="challenges">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="challengesDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                >Challenges</a
+                            >
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="challengesDropdown"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://leetcode.com/nanotaboada/"
+                                        target="_blank"
+                                        >LeetCode</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://app.codesignal.com/profile/nanotaboada"
+                                        target="_blank"
+                                        >CodeSignal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="https://www.hackerrank.com/profile/htaboada"
+                                        target="_blank"
+                                        >HackerRank</a
+                                    >
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item" id="contact">
-                            <a class="nav-link" aria-current="Contact" href="https://ar.linkedin.com/in/nanotaboada">Contact</a>
+                            <a
+                                class="nav-link"
+                                href="https://ar.linkedin.com/in/nanotaboada"
+                                target="_blank"
+                                >Contact</a
+                            >
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
