@@ -20,6 +20,22 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
         <style>
             body {
                 font-family: "Fira Code", monospace;
@@ -32,13 +48,21 @@
                 background-size: cover;
                 -o-background-size: cover;
             }
-            #projects {
-                font-weight: bold;
+            .nav-link {
+                display: flex;
+                align-items: center;
+            }
+            .nav-link .material-symbols-outlined {
+                margin-right: 5px;
+                vertical-align: middle;
             }
         </style>
     </head>
     <body>
-        <!-- Navigation -->
+        <!--
+            Navigation 
+            ___________________________________________________________________________________________________________________
+        -->
         <nav
             class="navbar navbar-expand-md navbar-light bg-light shadow-sm"
             aria-label="Main Navigation"
@@ -64,14 +88,24 @@
                 <div class="collapse navbar-collapse" id="hamburger-button">
                     <!-- me-auto (left aligned), ms-auto (right aligned) -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!--
+                            About 
+                            ___________________________________________________________________________________________________
+                        -->
                         <li class="nav-item" id="about">
                             <a
                                 class="nav-link"
                                 href="http://nanotaboada.com.ar/"
                                 target="_blank"
+                                ><span class="material-symbols-outlined">
+                                    globe </span
                                 >About</a
                             >
                         </li>
+                        <!--
+                            Projects 
+                            ___________________________________________________________________________________________________
+                        -->
                         <li class="nav-item dropdown" id="projects">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -80,6 +114,8 @@
                                 role="button"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
+                                ><span class="material-symbols-outlined">
+                                    experiment </span
                                 >Projects</a
                             >
                             <ul
@@ -96,6 +132,10 @@
                                 </li>
                             </ul>
                         </li>
+                        <!--
+                            Challenges 
+                            ___________________________________________________________________________________________________
+                        -->
                         <li class="nav-item dropdown" id="challenges">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -104,6 +144,8 @@
                                 role="button"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
+                                ><span class="material-symbols-outlined">
+                                    toys_and_games </span
                                 >Challenges</a
                             >
                             <ul
@@ -136,11 +178,17 @@
                                 </li>
                             </ul>
                         </li>
+                        <!--
+                            Contact 
+                            ___________________________________________________________________________________________________
+                        -->
                         <li class="nav-item" id="contact">
                             <a
                                 class="nav-link"
                                 href="https://ar.linkedin.com/in/nanotaboada"
                                 target="_blank"
+                                ><span class="material-symbols-outlined">
+                                    diversity_2 </span
                                 >Contact</a
                             >
                         </li>
