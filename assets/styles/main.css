@@ -1,0 +1,65 @@
+        body {
+            font-family: "Fira Code", monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+            background: white url("../images/background.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .navbar,
+        .nav-link,
+        .dropdown-menu {
+            font-size: 0.9rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.1rem;
+        }
+
+        .navbar-brand .bg-dark {
+            border-radius: 0 !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            display: flex;
+            align-items: center;
+            text-transform: lowercase;
+            color: #212529 !important;
+            background-color: transparent;
+            border-radius: 0 !important;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            background-color: #212529;
+            color: #F8F9FA !important;
+        }
+
+        .nav-link .material-symbols-outlined {
+            font-size: 0.9rem;
+            margin-right: 0.25rem;
+            vertical-align: middle;
+        }
+
+        .navbar .dropdown-menu {
+            margin-top: 0.5rem;
+            border-radius: 0 !important;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-item {
+            color: #212529;
+            background-color: transparent;
+            border-radius: 0 !important;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        .dropdown-item:hover {
+            background-color: #212529;
+            color: #F8F9FA;
+        }
+
+        .navbar-toggler {
+            border-radius: 0;
+        }
